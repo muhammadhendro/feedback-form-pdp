@@ -33,7 +33,7 @@
 }
 
 :root {
-  --background: transparent;
+  --background: #20242F;
   --foreground: #FFFFFF;
 }
 
@@ -42,7 +42,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: transparent;
+  background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
