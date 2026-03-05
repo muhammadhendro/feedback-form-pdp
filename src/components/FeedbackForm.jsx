@@ -335,8 +335,8 @@ export default function FeedbackForm() {
                         </h1>
                         <div className="text-left mt-6 text-gray-300 space-y-1 text-sm md:text-base border border-gray-600/50 bg-[#2B303E]/50 p-4 rounded-xl">
                             <p><span className="font-semibold text-white inline-block w-32">Judul Training</span> : Personal Data Protection (PDP) Advance Training</p>
-                            <p><span className="font-semibold text-white inline-block w-32">Tanggal</span> : Jakarta, 9 Februari 2026</p>
-                            <p><span className="font-semibold text-white inline-block w-32">Klien</span> : PT Perusahaan Gas Negara</p>
+                            <p><span className="font-semibold text-white inline-block w-32">Tanggal</span> : Jakarta, 7 April 2026</p>
+                            <p><span className="font-semibold text-white inline-block w-32">Klien</span> : PT Perusahaan Gas Negara (Tbk)</p>
                         </div>
                     </div>
 
@@ -541,7 +541,7 @@ export default function FeedbackForm() {
                             />
 
                             <SelectGroup
-                                label="2. Apakah Anda bersedia menerima informasi/undangan mengenai training atau awareness program yang diselenggarakan oleh Ignite?"
+                                label="2. Apakah Anda bersedia menerima informasi/undangan mengenai training atau awareness program yang diselenggarakan oleh PT Xynexis International?"
                                 name="yt_bersedia_info"
                                 options={['Ya', 'Tidak']}
                                 required
@@ -553,7 +553,7 @@ export default function FeedbackForm() {
                             />
 
                             <SelectGroup
-                                label="3. Apakah Anda bersedia jika beberapa foto atau rekaman video training (yang tidak menampilkan data pribadi dan rahasia) digunakan untuk iklan, publisitas dan promosi oleh Ignite dan Xynexis Group?"
+                                label="3. Apakah Anda bersedia jika beberapa foto atau rekaman video training (yang tidak menampilkan data pribadi dan rahasia) digunakan untuk iklan, publisitas dan promosi oleh Xynexis Group?"
                                 name="yt_bersedia_dokumentasi"
                                 options={['Ya', 'Tidak']}
                                 required
