@@ -42,15 +42,12 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* Prevent double scroll in iframe strictly */
-  min-height: auto;
-  height: auto;
-  overflow: hidden !important;
+  min-height: 100vh;
 }
 
 /* Animations */
