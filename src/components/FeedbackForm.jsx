@@ -317,7 +317,7 @@ export default function FeedbackForm() {
     }
 
     return (
-        <div className="w-full h-full bg-[#20242F] text-white p-4 pt-10 md:p-8 md:pt-16 flex items-start justify-center">
+        <div className="w-full h-full bg-[#20242F] text-white p-4 pt-24 md:p-8 md:pt-32 flex items-start justify-center">
             <div ref={wrapperRef} className="max-w-4xl w-full">
                 {/* Decorative Elements */}
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
