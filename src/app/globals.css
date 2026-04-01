@@ -47,8 +47,6 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
-  overscroll-behavior-y: none;
 }
 
 /* Animations */

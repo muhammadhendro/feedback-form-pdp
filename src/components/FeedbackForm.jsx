@@ -106,12 +106,10 @@ export default function FeedbackForm() {
             resizeObserver.observe(wrapperRef.current);
         }
 
-        const intervalId = setInterval(sendHeight, 500);
         sendHeight();
 
         return () => {
             resizeObserver.disconnect();
-            clearInterval(intervalId);
         };
     }, []);
 
@@ -294,7 +292,7 @@ export default function FeedbackForm() {
 
     if (isSubmitted) {
         return (
-            <div className="min-h-screen bg-[#20242F] text-white p-4 pt-24 md:p-8 md:pt-32 flex items-start justify-center">
+            <div className="w-full h-full bg-[#20242F] text-white p-4 pt-24 md:p-8 md:pt-32 flex items-start justify-center">
                 <div ref={wrapperRef} className="max-w-4xl w-full">
                     <div className="bg-[#20242F] rounded-2xl shadow-2xl p-8 md:p-12 text-center border border-gray-700 animate-[fadeInUp_0.5s_ease-out]">
                         <div className="mb-6">
@@ -319,7 +317,7 @@ export default function FeedbackForm() {
     }
 
     return (
-        <div className="min-h-screen bg-[#20242F] text-white p-4 pt-24 md:p-8 md:pt-32 flex items-start justify-center">
+        <div className="w-full h-full bg-[#20242F] text-white p-4 pt-10 md:p-8 md:pt-16 flex items-start justify-center">
             <div ref={wrapperRef} className="max-w-4xl w-full">
                 {/* Decorative Elements */}
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
