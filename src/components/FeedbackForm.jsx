@@ -154,25 +154,25 @@ export default function FeedbackForm() {
         const nameRegex = /^[a-zA-Z\s\.\-\']+$/;
 
         if (!formData.full_name) {
-            errors.full_name = 'Nama Peserta is required';
+            errors.full_name = 'Nama Peserta wajib diisi';
         } else if (formData.full_name.length < 2) {
-            errors.full_name = 'Name is too short';
+            errors.full_name = 'Nama Peserta terlalu singkat';
         } else if (!nameRegex.test(formData.full_name)) {
-            errors.full_name = 'Name contains invalid characters';
+            errors.full_name = 'Nama Peserta mengandung karakter yang tidak valid';
         }
 
         if (!formData.company_name) {
-            errors.company_name = 'Perusahaan is required';
+            errors.company_name = 'Perusahaan wajib diisi';
         } else if (formData.company_name.length < 2) {
-            errors.company_name = 'Company name is too short';
+            errors.company_name = 'Nama perusahaan terlalu singkat';
         }
 
         if (!formData.division_role) {
-            errors.division_role = 'Divisi / Jabatan is required';
+            errors.division_role = 'Divisi / Jabatan wajib diisi';
         }
 
         if (formData.email && !emailRegex.test(formData.email)) {
-            errors.email = 'Invalid email address';
+            errors.email = 'Alamat email tidak valid';
         }
 
         const requiredOptions = [
@@ -332,9 +332,9 @@ export default function FeedbackForm() {
                             Feedback Form
                         </h1>
                         <div className="text-left mt-6 text-gray-300 space-y-1 text-sm md:text-base border border-gray-600/50 bg-[#2B303E]/50 p-4 rounded-xl">
-                            <p><span className="font-semibold text-white inline-block w-32">Judul Training</span> : Personal Data Protection (PDP) Advance Training</p>
-                            <p><span className="font-semibold text-white inline-block w-32">Tanggal</span> : Jakarta, 7 April 2026</p>
-                            <p><span className="font-semibold text-white inline-block w-32">Klien</span> : PT Perusahaan Gas Negara (Tbk)</p>
+                            <p><span className="font-semibold text-white inline-block w-32">Judul Training</span> : Awareness and Training Incident Response</p>
+                            <p><span className="font-semibold text-white inline-block w-32">Tanggal</span> : Kamis, 28 Juli 2026</p>
+                            <p><span className="font-semibold text-white inline-block w-32">Klien</span> : PT Bridgestone Tire Indonesia</p>
                         </div>
                     </div>
 
@@ -363,12 +363,12 @@ export default function FeedbackForm() {
                         <div className="space-y-6">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="w-1 h-8 bg-gradient-to-b from-ignite-green to-ignite-green/50 rounded-full"></div>
-                                <h2 className="text-xl font-bold text-white">Personal Information</h2>
+                                <h2 className="text-xl font-bold text-white">Data Peserta</h2>
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <InputField
-                                    label="Nama Peserta"
+                                    label="1. Nama Peserta"
                                     name="full_name"
                                     required
                                     value={formData.full_name}
@@ -378,7 +378,7 @@ export default function FeedbackForm() {
                                     onBlur={() => setFocusedField(null)}
                                 />
                                 <InputField
-                                    label="Perusahaan"
+                                    label="2. Perusahaan"
                                     name="company_name"
                                     required
                                     value={formData.company_name}
@@ -388,7 +388,7 @@ export default function FeedbackForm() {
                                     onBlur={() => setFocusedField(null)}
                                 />
                                 <InputField
-                                    label="Divisi / Jabatan"
+                                    label="3. Divisi / Jabatan"
                                     name="division_role"
                                     required
                                     value={formData.division_role}
@@ -398,7 +398,7 @@ export default function FeedbackForm() {
                                     onBlur={() => setFocusedField(null)}
                                 />
                                 <InputField
-                                    label="Email (tidak wajib)"
+                                    label="4. Email (tidak wajib)"
                                     name="email"
                                     type="email"
                                     value={formData.email}
@@ -408,7 +408,7 @@ export default function FeedbackForm() {
                                     onBlur={() => setFocusedField(null)}
                                 />
                                 <InputField
-                                    label="No. HP (tidak wajib)"
+                                    label="5. No. HP (tidak wajib)"
                                     name="phone_number"
                                     type="tel"
                                     value={formData.phone_number}
