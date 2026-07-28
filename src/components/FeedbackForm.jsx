@@ -349,7 +349,7 @@ export default function FeedbackForm() {
     if (isSubmitted) {
         return (
             <div
-                className="w-full bg-gradient-to-b from-white via-[#FAFBFC] to-[#F1F4F8] px-4 py-6 text-[#20242F] md:px-8 md:py-10"
+                className="w-full bg-gradient-to-b from-white via-[#FAFBFC] to-[#F1F4F8] px-4 pb-8 pt-20 text-[#20242F] md:px-8 md:pb-12 md:pt-24"
                 style={{ fontFamily: 'Roboto, Arial, sans-serif' }}
             >
                 <div ref={wrapperRef} className="mx-auto max-w-4xl">
@@ -376,7 +376,7 @@ export default function FeedbackForm() {
 
     return (
         <div
-            className="w-full bg-gradient-to-b from-white via-[#FAFBFC] to-[#F1F4F8] px-4 py-6 text-[#20242F] md:px-8 md:py-10"
+            className="w-full bg-gradient-to-b from-white via-[#FAFBFC] to-[#F1F4F8] px-4 pb-8 pt-20 text-[#20242F] md:px-8 md:pb-12 md:pt-24"
             style={{ fontFamily: 'Roboto, Arial, sans-serif' }}
         >
             <div ref={wrapperRef} className="mx-auto max-w-5xl">
@@ -748,7 +748,7 @@ export default function FeedbackForm() {
                             className={`w-full rounded-2xl px-6 py-4 text-lg font-bold text-white transition-all duration-300 ${
                                 loading
                                     ? 'cursor-not-allowed bg-[#98A2B3] opacity-80'
-                                    : 'bg-gradient-to-r from-[#BE45FF] via-[#CF6EAF] to-[#E9BC1E] shadow-[0_18px_40px_rgba(190,69,255,0.22)] hover:-translate-y-0.5 hover:shadow-[0_22px_48px_rgba(190,69,255,0.28)] active:translate-y-0'
+                                    : 'bg-[#90C343] shadow-[0_18px_40px_rgba(144,195,67,0.28)] hover:-translate-y-0.5 hover:bg-[#7FB536] hover:shadow-[0_22px_48px_rgba(144,195,67,0.34)] active:translate-y-0'
                             }`}
                         >
                             {loading ? (
