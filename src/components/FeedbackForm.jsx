@@ -349,7 +349,7 @@ export default function FeedbackForm() {
     if (isSubmitted) {
         return (
             <div
-                className="w-full bg-gradient-to-b from-white via-[#FAFBFC] to-[#F1F4F8] px-4 pb-8 pt-20 text-[#20242F] md:px-8 md:pb-12 md:pt-24"
+                className="w-full bg-gradient-to-b from-white via-[#FAFBFC] to-[#F1F4F8] px-4 pb-8 pt-32 text-[#20242F] md:px-8 md:pb-12 md:pt-40"
                 style={{ fontFamily: 'Roboto, Arial, sans-serif' }}
             >
                 <div ref={wrapperRef} className="mx-auto max-w-4xl">
@@ -376,7 +376,7 @@ export default function FeedbackForm() {
 
     return (
         <div
-            className="w-full bg-gradient-to-b from-white via-[#FAFBFC] to-[#F1F4F8] px-4 pb-8 pt-20 text-[#20242F] md:px-8 md:pb-12 md:pt-24"
+            className="w-full bg-gradient-to-b from-white via-[#FAFBFC] to-[#F1F4F8] px-4 pb-8 pt-32 text-[#20242F] md:px-8 md:pb-12 md:pt-40"
             style={{ fontFamily: 'Roboto, Arial, sans-serif' }}
         >
             <div ref={wrapperRef} className="mx-auto max-w-5xl">
